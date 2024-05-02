@@ -117,7 +117,7 @@ async def query_handler(update: Update, context: CallbackContext):
 
 class TgHandler:
     def __init__(self):
-        BOT_TOKEN = os.getenv(key="BOT_TOKEN", default="7086079456:AAHI7NWCKBedxLT9-cnsoA0IVqB2oaK-VL0")
+        BOT_TOKEN = os.getenv(key="BOT_TOKEN")
         self.application = ApplicationBuilder().token(BOT_TOKEN).build()
         self.add_user_handlers()
     def add_user_handlers(self):
